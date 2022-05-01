@@ -1,4 +1,7 @@
-# Enter your code here. Read input from STDIN. Print output to STDOUT
+# Question Source: "HackerRank (Project Euler)"
+# Problem URL: "https://www.hackerrank.com/contests/projecteuler/challenges/euler003/problem"
+# Solution by: "https://github.com/pawansinghpks01"
+
 import sys
 import math
 t = int(input().strip())
