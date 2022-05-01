@@ -1,6 +1,6 @@
 /*
 Question Source: "HackerRank (Project Euler)"
-Problem URL: "https://www.hackerrank.com/contests/projecteuler/challenges/euler001/problem"
+Problem URL: "https://www.hackerrank.com/contests/projecteuler/challenges/euler002/problem"
 Solution by: "https://github.com/pawansinghpks01"
 */
 
@@ -14,12 +14,14 @@ int main(){
         long long n;
         cin >> n;
         long long sum=0;
-        long long prev = 0, curr = 1, next = 1 ;  
+        long long prev = 0, curr = 1, next = 1 ;
+        /*Logic to generate terms of fibonacci series*/
     	while(next<n)
         {
         	next=prev+curr;
 			prev=curr;
 			curr=next;
+            /*Adding only the even value terms*/
 			if(next%2==0 && next<=n)
 				sum+=next;
 		}
